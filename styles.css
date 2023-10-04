@@ -5,7 +5,7 @@ h3,
 p {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif; 
+  font-family: "Arial", sans-serif;
   color: #333;
 }
 
@@ -15,7 +15,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 header {
   background-color: #333;
@@ -27,8 +26,8 @@ header {
   z-index: 1;
 }
 
-header i{
-font-size: 2rem;
+header i {
+  font-size: 2rem;
 }
 
 nav {
@@ -42,7 +41,7 @@ nav ul {
   list-style-type: none;
   display: flex;
   padding: 0;
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 nav ul li a {
@@ -85,8 +84,8 @@ section {
 }
 
 #introduction {
-  background-color: #f9e0e3; 
-  color: #333; 
+  background-color: #f9e0e3;
+  color: #333;
   position: relative;
 }
 
@@ -112,7 +111,6 @@ section {
   padding: 60px 0;
 }
 
-
 .progress-bar {
   width: 100px;
   background-color: #eee;
@@ -125,18 +123,18 @@ section {
 .progress {
   height: 100%;
   width: 0;
-  background-color: #ff9900; 
+  background-color: #ff9900;
   animation: fillProgressBar 2s ease-out;
 }
 
 #contact {
-  background-color: #ffebb7; 
-  color: #333; 
+  background-color: #ffebb7;
+  color: #333;
 }
 
 #contact h2 {
   font-size: 2rem;
-  color: #ff9900; 
+  color: #ff9900;
   margin-bottom: 20px;
 }
 
@@ -146,7 +144,7 @@ section {
 
 .contact-icon a {
   text-decoration: none;
-  color: #333; 
+  color: #333;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
@@ -174,14 +172,14 @@ section {
 .blinking-cursor {
   font-size: 5rem;
   position: relative;
-  top: -5px; 
-  color: #333; 
+  top: -5px;
+  color: #333;
   animation: blink 2s step-end infinite;
 }
 
 .download-button {
   display: inline-block;
-  background-color: #007acc; 
+  background-color: #007acc;
   color: #fff;
   padding: 10px 20px;
   margin-top: 20px;
@@ -191,7 +189,7 @@ section {
 }
 
 .download-button:hover {
-  background-color: #005aa3; 
+  background-color: #005aa3;
   color: #fff;
 }
 
@@ -201,7 +199,7 @@ section {
   margin-top: 100px;
   justify-content: space-between;
   padding: 0px 50px;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .skill-card {
@@ -209,11 +207,11 @@ section {
   width: calc(20% - 20px);
   margin: 10px;
   text-align: center;
-  background-color: #fff; 
-  padding: 20px; 
-  border-radius: 10px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.3s ease; 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .skill-card:hover {
@@ -277,6 +275,46 @@ footer .subnote {
   font-size: 0.65rem;
 }
 
-footer i{
-color: red;
+footer i {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+    position: static;
+  }
+
+  .blinking-cursor {
+    font-size: 1.5rem;
+    position: static;
+  }
+
+  #introduction h1 {
+    font-size: 1.5rem;
+  }
+
+  .bio {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .skill-card {
+    width: calc(100% - 20px);
+  }
+
+  .section-title.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+    transition: all 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer .subnote {
+    font-size: 0.5rem;
+  }
 }
