@@ -308,8 +308,21 @@ footer i {
     font-size: 1rem;
   }
 
+  .skill-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill-group {
+    display: flex;
+    flex-direction: column;    
+    flex-wrap: wrap;
+    flex: none;
+  }
+
   .skill-card {
-    width: calc(100% - 20px);
+    width: 180px;
   }
 
   .section-title.sticky {
