@@ -1,9 +1,9 @@
 :root {
   --primary-color: #353535;
-  --secondary-color: #3C6E71;
-  --text-color: #FFFFFF;
-  --light-text-color: #D9D9D9;
-  --background-color: #284B63;
+  --secondary-color: #3c6e71;
+  --text-color: #ffffff;
+  --light-text-color: #d9d9d9;
+  --background-color: #284b63;
 }
 
 body,
@@ -100,7 +100,7 @@ section {
 
 #introduction h1 {
   font-size: 5rem;
-  color: var(--primary-color)
+  color: var(--primary-color);
 }
 
 .bio {
@@ -120,22 +120,6 @@ section {
   color: var(--text-color);
   padding: 60px 0;
 }
-
-/* .progress-bar {
-  width: 100px;
-  background-color: var(--light-text-color);
-  border-radius: 5px;
-  height: 10px;
-  margin-left: 10px;
-  overflow: hidden;
-}
-
-.progress {
-  height: 100%;
-  width: 0;
-  background-color: var(--secondary-color);
-  animation: fillProgressBar 2s ease-out;
-} */
 
 #contact {
   background-color: var(--light-text-color);
@@ -212,9 +196,23 @@ section {
   gap: 20px;
 }
 
+.skill-category-title {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.skill-group {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex: 1;
+}
+
 .skill-card {
   flex: 1;
-  width: calc(20% - 20px);
+  width: 180px;
+  max-width: 180px;
   margin: 10px;
   text-align: center;
   background-color: var(--light-text-color);
@@ -252,6 +250,7 @@ section {
   margin-bottom: 20px;
   position: relative;
   align-self: center;
+  justify-self: flex-start;
 }
 
 .skill-category h3::after {
