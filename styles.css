@@ -183,7 +183,7 @@ section {
   font-size: 5rem;
   position: relative;
   top: -5px;
-  color: var(--text-color);
+  color: var(--secondary-color);
   animation: blink 2s step-end infinite;
 }
 
