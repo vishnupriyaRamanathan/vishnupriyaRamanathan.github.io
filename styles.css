@@ -81,6 +81,11 @@ section {
   top: 0;
   padding: 10px 0;
   z-index: 1;
+  text-transform: uppercase;
+}
+
+.section-title-skills {
+  color: var(--text-color) !important;
 }
 
 .sticky {
@@ -289,6 +294,19 @@ footer i {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    margin-left: 0;
+  }
+
+  nav i::before {
+    display: none;
+  }
+
   .section-title {
     font-size: 1.5rem;
     position: static;
@@ -316,7 +334,7 @@ footer i {
 
   .skill-group {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     flex-wrap: wrap;
     flex: none;
   }
